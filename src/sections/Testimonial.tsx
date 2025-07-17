@@ -16,7 +16,6 @@ const Testimonial = () => {
 				start: "top bottom",
 				end: "200% top",
 				scrub: true,
-				markers: true,
 			},
 		});
 		tl.to(".testimonials-section .first-title", {
@@ -43,7 +42,6 @@ const Testimonial = () => {
 				end: "200% top",
 				scrub: 1.5,
 				pin: true,
-				markers: true,
 			},
 		});
 		pinTl.from(".vd-card", {
