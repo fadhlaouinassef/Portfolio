@@ -1,6 +1,4 @@
 # Portfolio Nassef - GSAP
-
-![alt text](public/images/Final.png)
 Un portfolio moderne et interactif créé avec React, TypeScript et GSAP, présentant mes compétences et projets avec des animations fluides et modernes.
 
 ## ✨ Fonctionnalités
