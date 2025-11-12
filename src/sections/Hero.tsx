@@ -68,29 +68,34 @@ const Hero = () => {
 					<>
 						{isMobile && (
 							<img
-								src="/images/hero-bg.png"
-								className="absolute bottom-40 size-full object-cover"
-								alt="hero-bg"
+								src="/images/file_00000000ef9c61f7bacdf5fa856555f9.png"
+								className="absolute bottom-40 size-full object-cover brightness-90"
+								alt="nassef-bg"
 							/>
 						)}
 						<img
-							src="/images/hero-img.png"
-							className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto"
-							alt="hero-img"
+							src="/images/Gemini_Generated_Image_ec201hec201hec20 (2).png"
+							className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto brightness-95 contrast-110"
+							alt="nassef-profile"
 						/>
 					</>
 				) : (
-					<video
-						src="/videos/hero-bg.mp4"
-						autoPlay
-						muted
-						playsInline
-						className="absolute inset-0 w-full h-full object-cover"
-					/>
+					<>
+						<img
+							src="/images/file_00000000ef9c61f7bacdf5fa856555f9.png"
+							className="absolute inset-0 w-full h-full object-cover brightness-90"
+							alt="nassef-bg"
+						/>
+						<img
+							src="/images/Gemini_Generated_Image_ec201hec201hec20 (2).png"
+							className="absolute bottom-0 right-20 object-auto max-h-full brightness-95 contrast-110 drop-shadow-lg"
+							alt="nassef-profile"
+						/>
+					</>
 				)}
 				<div className="hero-content opacity-0">
 					<div className="overflow-hidden">
-						<h1 className="hero-title">Freaking Delicious</h1>
+						<h1 className="hero-title">Nassef Fadhlaoui</h1>
 					</div>
 					<div
 						style={{
@@ -99,17 +104,17 @@ const Hero = () => {
 						className="hero-text-scroll"
 					>
 						<div className="hero-subtitle">
-							<h1>Protein + Caffine </h1>
+							<h1>Développeur Full Stack</h1>
 						</div>
 					</div>
 
 					<h2>
-						Live life to the fullest with SPYLT: Shatter boredom and embrace
-						your inner kid with every deliciously smooth chug.
+						Étudiant ingénieur passionné par la création d'applications modernes et performantes, 
+						avec une solide expertise en développement web et génie logiciel.
 					</h2>
 
 					<div className="hero-button">
-						<p>Chug a SPYLT</p>
+						<p>Découvrir mon parcours</p>
 					</div>
 				</div>
 			</div>

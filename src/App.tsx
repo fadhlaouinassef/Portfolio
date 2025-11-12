@@ -2,41 +2,57 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useState } from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Benefit from "./sections/Benefit";
-import Flavor from "./sections/Flavor";
+import Loader from "./components/Loader";
+import CustomCursor from "./components/CustomCursor";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
 import Hero from "./sections/Hero";
 import Message from "./sections/Message";
-import Nutrition from "./sections/Nutrition";
-import Testimonial from "./sections/Testimonial";
+import Experience from "./sections/Experience";
+import Education from "./sections/Education";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const App = () => {
+	const [isLoading, setIsLoading] = useState(true);
+
 	useGSAP(() => {
-		ScrollSmoother.create({
-			smooth: 3,
-			effects: true,
-		});
-	});
+		if (!isLoading) {
+			ScrollSmoother.create({
+				smooth: 3,
+				effects: true,
+			});
+		}
+	}, [isLoading]);
+
+	const handleLoadComplete = () => {
+		setIsLoading(false);
+	};
+
 	return (
-		<main>
-			<Navbar />
-			<div id="smooth-wrapper">
-				<div id="smooth-content">
-					<Hero />
-					<Message />
-					<Flavor />
-					<Nutrition />
-					<div>
-						<Benefit />
-						<Testimonial />
+		<>
+			{isLoading && <Loader onComplete={handleLoadComplete} />}
+			<CustomCursor />
+			<main>
+				<Navbar />
+				<div id="smooth-wrapper">
+					<div id="smooth-content">
+						<Hero />
+						<Message />
+						<Skills />
+						<Experience />
+						<div>
+							<Projects />
+							<Education />
+						</div>
+						<Footer />
 					</div>
-					<Footer />
 				</div>
-			</div>
-		</main>
+			</main>
+		</>
 	);
 };
 
