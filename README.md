@@ -1,52 +1,80 @@
-# Project SPYLT Clone
+# Portfolio Nassef - GSAP
 
 ![alt text](public/images/Final.png)
-A modern Awwards winning Website which is a clone of SPYLT made using GSAP.
+Un portfolio moderne et interactif créé avec React, TypeScript et GSAP, présentant mes compétences et projets avec des animations fluides et modernes.
 
-## Inspiration:
+## ✨ Fonctionnalités
 
-This project was made by following a YouTube tutorial.
-[Full Stack Empire](https://youtu.be/pqYxZ8jd768?si=vNOtu71kece83qKs)
+- **Animations GSAP** - Animations fluides et performantes pour une expérience utilisateur immersive
+- **Design Responsive** - Optimisé pour tous les appareils et tailles d'écran  
+- **TypeScript** - Code typé pour une meilleure maintenabilité
+- **Performance** - Optimisé avec Vite et des techniques de performance modernes
+- **Sections Interactives** - Hero, Projets, Compétences, Expérience, Témoignages, Contact
 
-What's other than tutorial:
-- Migrated from JavaScript to TypeScript.
-- Animation improvements.
-- Migrated from npm to bun for faster builds.
-- Biome for Linting and type checks.
-- Performance optimization.
+## 🚀 Technologies Utilisées
 
-## :star: Give A Star
+- **Frontend**: React 18, TypeScript
+- **Animations**: GSAP (GreenSock)
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Linting**: Biome
+- **Package Manager**: Bun (pour des builds plus rapides)
 
-You can also give this repository a star to show more people and they can use this repository.
+## 🏠 Technologies & Outils
 
-## 🏠 Built With:
+[![My Skills](https://skillicons.dev/icons?i=react,typescript,tailwind,gsap,vite,vercel)](https://skillicons.dev)
 
-[![My Skills](https://skillicons.dev/icons?i=react,bun,tailwind,vscode,vite,vercel)](https://skillicons.dev)
+## 🛠 Compétences Techniques
 
-## 🛠 Skills
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,ts,react,nodejs,git,github)](https://skillicons.dev)
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,ts,git,vite,vercel,github)](https://skillicons.dev)
+## � Installation et Démarrage
 
+```bash
+# Cloner le repository
+git clone https://github.com/fadhlaouinassef/Portfolio.git
 
-## 🙋‍♂️ Connect With Me
+# Naviguer dans le dossier
+cd Portfolio
 
-[<img src="https://skillicons.dev/icons?i=github" />](https://github.com/omunite215)&nbsp;
-[<img src="https://skillicons.dev/icons?i=linkedin" />](https://www.linkedin.com/in/om-patel-401068143/)&nbsp;
-[<img src="https://skillicons.dev/icons?i=instagram" />](https://www.instagram.com/_21omp/)&nbsp;
-[<img src="https://skillicons.dev/icons?i=devto" />](https://portfolio-jade-gamma-13.vercel.app/)
+# Installer les dépendances (avec bun pour de meilleures performances)
+bun install
 
+# Démarrer le serveur de développement
+bun run dev
+```
 
-## 🗒️ Authors
-- Om Patel
+## 🚀 Scripts Disponibles
+
+- `bun run dev` - Démarre le serveur de développement
+- `bun run build` - Crée le build de production
+- `bun run preview` - Prévisualise le build de production
+- `bun run lint` - Lance le linting avec Biome
+
+## 🙋‍♂️ Contact
+
+Si vous avez des questions ou souhaitez collaborer, n'hésitez pas à me contacter !
+
+📧 Email: [nassef.fadhlaouim@gmail.com](mailto:nassef.fadhlaouim@gmail.com)
+🌐 LinkedIn: [Votre LinkedIn](https://linkedin.com/in/votre-profil)
+💼 Portfolio: [Votre Portfolio](https://votre-portfolio.vercel.app)
+
+## 🗒️ Auteur
+
+**Nassef Fadhlaouim** - Développeur Frontend
 
 <p align="left">
-  <a href="https://skillicons.dev">
-    <a href="https://github.com/omunite215">
-      <img src="https://skillicons.dev/icons?i=github" />
-    </a>
+  <a href="https://github.com/fadhlaouinassef">
+    <img src="https://skillicons.dev/icons?i=github" />
   </a>
 </p>
 
+## :star: Donnez une Étoile
+
+Si ce projet vous a été utile, n'hésitez pas à lui donner une étoile ⭐ pour le soutenir !
+
+---
+
 <p align="center">
-  <img src="https://github.com/omunite215/Project_MERN-Dashboard/assets/78680563/6a4b6fef-216b-4442-a621-8878405a1aa9" alt="Om's Logo Image"/>
+  Fait avec ❤️ par Nassef Fadhlaouim
 </p>
