@@ -6,7 +6,7 @@ import { educationList } from "../constants";
 const Education = () => {
 	useGSAP(() => {
 		gsap.set(".education-section", {
-			marginTop: "-140vh",
+			marginTop: "-100vh",
 		});
 		const tl = gsap.timeline({
 			scrollTrigger: {

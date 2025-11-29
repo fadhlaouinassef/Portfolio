@@ -4,4 +4,5 @@ export type ClipPathTitleProps = {
 	bg: string;
 	className: string;
 	borderColor: string;
+	containerClass?: string;
 };

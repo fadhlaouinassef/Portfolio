@@ -19,6 +19,16 @@
   will-change: transform;
 }
 
+/* Performance Optimizations */
+.hero-content,
+.hero-text-scroll,
+.msg-text-scroll,
+.skills-text-scroll,
+.experience-text-scroll,
+.nutrition-text-scroll {
+	will-change: transform, opacity, clip-path;
+}
+
 @theme {
 	--color-black: #222123;
 	--color-main-bg: #232224;

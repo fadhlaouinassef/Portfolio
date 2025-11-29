@@ -71,12 +71,14 @@ const Hero = () => {
 								src="/images/file_00000000ef9c61f7bacdf5fa856555f9.png"
 								className="absolute bottom-40 size-full object-cover brightness-90"
 								alt="nassef-bg"
+								fetchPriority="high"
 							/>
 						)}
 						<img
 							src="/images/Gemini_Generated_Image_ec201hec201hec20 (2).png"
 							className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto brightness-95 contrast-110"
 							alt="nassef-profile"
+							fetchPriority="high"
 						/>
 					</>
 				) : (
@@ -85,11 +87,13 @@ const Hero = () => {
 							src="/images/file_00000000ef9c61f7bacdf5fa856555f9.png"
 							className="absolute inset-0 w-full h-full object-cover brightness-90"
 							alt="nassef-bg"
+							fetchPriority="high"
 						/>
 						<img
 							src="/images/Gemini_Generated_Image_ec201hec201hec20 (2).png"
 							className="absolute bottom-0 right-20 object-auto max-h-full brightness-95 contrast-110 drop-shadow-lg"
 							alt="nassef-profile"
+							fetchPriority="high"
 						/>
 					</>
 				)}

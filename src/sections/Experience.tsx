@@ -65,58 +65,67 @@ const Experience = () => {
 				src="/images/slider-dip.png"
 				alt="background"
 				className="w-full object-cover"
+				loading="lazy"
 			/>
 			<img 
 				src="/images/Gemini_Generated_Image_ec201hec201hec20 (2).png" 
 				alt="nassef-profile" 
 				className="big-img opacity-10 grayscale-[20%] brightness-75"
+				loading="lazy"
 			/>
-			<div className="flex md:flex-row flex-col justify-between md:px-10 px-5 mt-14 md:mt-0">
-				<div className="relative inline-block md:translate-y-20">
-					<div className="general-title relative flex flex-col justify-center items-center gap-24">
-						<div className="overflow-hidden place-self-start">
+			<div className="flex md:flex-row flex-col md:px-10 px-5 mt-14 md:mt-0 gap-8">
+				<div className="md:w-1/4 w-full relative inline-block md:translate-y-20">
+					<div className="relative flex flex-col justify-center items-start gap-4 md:text-6xl text-4xl font-bold uppercase tracking-tight">
+						<div className="overflow-hidden">
 							<h1 className="experience-title">Mon parcours</h1>
 						</div>
 						<div
 							style={{
 								clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
 							}}
-							className="experience-text-scroll place-self-start"
+							className="experience-text-scroll"
 						>
-							<div className="bg-yellow-brown pb-5 md:pt-0 pt-3 md:px-5 px-3 inline-block">
+							<div className="bg-yellow-brown pb-2 md:pt-0 pt-2 md:px-4 px-2 inline-block">
 								<h2 className="text-milk-yellow">Professionnel</h2>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="flex md:justify-center items-center translate-y-5">
-					<div className="md:max-w-xs max-w-md">
-						<p className="text-lg md:text-right text-balance font-paragraph">
-							Expériences diversifiées en développement web, de la conception 
-							à la réalisation de projets complets avec les dernières technologies.
-						</p>
+
+				<div className="md:w-3/4 w-full flex flex-col gap-12">
+					<div className="flex md:justify-end items-center translate-y-5">
+						<div className="md:max-w-xl max-w-md">
+							<p className="text-lg md:text-right text-balance font-paragraph">
+								Expériences diversifiées en développement web, de la conception 
+								à la réalisation de projets complets avec les dernières technologies.
+							</p>
+						</div>
 					</div>
-				</div>
-				<div className="nutrition-box">
-					<div className="list-wrapper flex-col gap-8">
-						{experiences.map((exp, index) => (
-							<div key={index} className="relative flex-1 text-center max-w-md mx-auto">
-								<div className="space-y-3 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
-									<p className="md:text-xl text-lg font-bold text-primary">{exp.title}</p>
-									<p className="font-paragraph text-base font-semibold text-gray-700">{exp.company}</p>
-									<p className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full inline-block">{exp.period}</p>
-									<p className="text-sm md:text-base font-paragraph text-balance leading-relaxed text-gray-800">
-										{exp.description}
-									</p>
-									<span className="inline-block px-3 py-1 bg-primary/20 text-primary text-sm rounded-full font-medium">
-										{exp.type}
-									</span>
+
+					<div className="w-full">
+						<div className="flex flex-col gap-8">
+							{experiences.map((exp, index) => (
+								<div key={index} className="relative flex-1 text-center w-full">
+									<div className="space-y-3 p-6 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20 shadow-sm hover:bg-white/20 transition-colors">
+										<div className="flex md:flex-row flex-col justify-between items-start gap-4">
+											<div className="text-left">
+												<p className="md:text-xl text-lg font-bold text-primary">{exp.title}</p>
+												<p className="font-paragraph text-base font-semibold text-gray-700">{exp.company}</p>
+											</div>
+											<div className="flex flex-col md:items-end items-start gap-2">
+												<p className="text-sm text-gray-600 bg-gray-100 px-3 py-1 rounded-full inline-block">{exp.period}</p>
+												<span className="inline-block px-3 py-1 bg-primary/20 text-primary text-sm rounded-full font-medium">
+													{exp.type}
+												</span>
+											</div>
+										</div>
+										<p className="text-sm md:text-base font-paragraph text-balance leading-relaxed text-gray-800 text-left mt-4">
+											{exp.description}
+										</p>
+									</div>
 								</div>
-								{index !== experiences.length - 1 && (
-									<div className="spacer-border mt-6" />
-								)}
-							</div>
-						))}
+							))}
+						</div>
 					</div>
 				</div>
 			</div>

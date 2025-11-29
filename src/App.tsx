@@ -2,17 +2,18 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";
 import CustomCursor from "./components/CustomCursor";
-import Projects from "./sections/Projects";
-import Skills from "./sections/Skills";
 import Hero from "./sections/Hero";
-import Message from "./sections/Message";
-import Experience from "./sections/Experience";
-import Education from "./sections/Education";
+
+const Projects = lazy(() => import("./sections/Projects"));
+const Skills = lazy(() => import("./sections/Skills"));
+const Message = lazy(() => import("./sections/Message"));
+const Experience = lazy(() => import("./sections/Experience"));
+const Education = lazy(() => import("./sections/Education"));
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -22,7 +23,7 @@ const App = () => {
 	useGSAP(() => {
 		if (!isLoading) {
 			ScrollSmoother.create({
-				smooth: 3,
+				smooth: 1.5, // Reduced from 3 for better performance
 				effects: true,
 			});
 		}
@@ -41,13 +42,15 @@ const App = () => {
 				<div id="smooth-wrapper">
 					<div id="smooth-content">
 						<Hero />
-						<Message />
-						<Skills />
-						<Experience />
-						<div>
-							<Projects />
-							<Education />
-						</div>
+						<Suspense fallback={<div className="h-screen w-full flex items-center justify-center">Loading...</div>}>
+							<Message />
+							<Skills />
+							<Experience />
+							<div>
+								<Projects />
+								<Education />
+							</div>
+						</Suspense>
 						<Footer />
 					</div>
 				</div>

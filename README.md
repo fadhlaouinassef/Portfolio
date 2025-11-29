@@ -53,13 +53,13 @@ bun run dev
 
 Si vous avez des questions ou souhaitez collaborer, n'hésitez pas à me contacter !
 
-📧 Email: [nassef.fadhlaouim@gmail.com](mailto:nassef.fadhlaouim@gmail.com)
-🌐 LinkedIn: [Votre LinkedIn](https://linkedin.com/in/votre-profil)
-💼 Portfolio: [Votre Portfolio](https://votre-portfolio.vercel.app)
+📧 Email: [nassef.fadhlaoui@gmail.com](mailto:nassef.fadhlaoui@gmail.com)
+🌐 LinkedIn: [LinkedIn]
+💼 Portfolio: [Portfolio]
 
 ## 🗒️ Auteur
 
-**Nassef Fadhlaouim** - Développeur Frontend
+**Nassef Fadhlaoui** - Développeur Frontend
 
 <p align="left">
   <a href="https://github.com/fadhlaouinassef">

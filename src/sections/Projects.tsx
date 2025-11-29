@@ -52,6 +52,7 @@ const Projects = () => {
 									bg={index === 0 ? "#c88e64" : index === 1 ? "#7F3B2D" : "#FED775"}
 									className={index === 0 ? "first-project" : index === 1 ? "second-project" : "third-project"}
 									borderColor="#222123"
+									containerClass="md:text-6xl text-4xl font-bold uppercase leading-[9vw] tracking-[-.35vw]"
 								/>
 								<div className="mt-6 px-8 py-6 bg-white/20 backdrop-blur-sm rounded-lg shadow-lg">
 									<div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4 gap-2">

@@ -15,7 +15,7 @@ const FooterSection = () => {
 				</div>
 
 				<img
-					src="/images/Gemini_Generated_Image_ec201hec201hec20 (2).png"
+					src="/images/Nassef.png"
 					className="absolute top-20 left-1/2 transform -translate-x-1/2 object-contain opacity-15 max-h-[400px] grayscale-[30%] brightness-75"
 					alt="nassef-profile"
 				/>

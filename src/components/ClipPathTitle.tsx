@@ -6,9 +6,10 @@ const ClipPathTitle = ({
 	bg,
 	className,
 	borderColor,
+	containerClass = "general-title",
 }: ClipPathTitleProps) => {
 	return (
-		<div className="general-title">
+		<div className={containerClass}>
 			<div
 				style={{
 					clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
