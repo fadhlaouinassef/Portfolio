@@ -26,34 +26,12 @@ Un portfolio moderne et interactif créé avec React, TypeScript et GSAP, prése
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,js,ts,react,nodejs,git,github)](https://skillicons.dev)
 
-## � Installation et Démarrage
-
-```bash
-# Cloner le repository
-git clone https://github.com/fadhlaouinassef/Portfolio.git
-
-# Naviguer dans le dossier
-cd Portfolio
-
-# Installer les dépendances (avec bun pour de meilleures performances)
-bun install
-
-# Démarrer le serveur de développement
-bun run dev
-```
-
-## 🚀 Scripts Disponibles
-
-- `bun run dev` - Démarre le serveur de développement
-- `bun run build` - Crée le build de production
-- `bun run preview` - Prévisualise le build de production
-- `bun run lint` - Lance le linting avec Biome
 
 ## 🙋‍♂️ Contact
 
 Si vous avez des questions ou souhaitez collaborer, n'hésitez pas à me contacter !
 
-📧 Email: [nassef.fadhlaoui@gmail.com](mailto:nassef.fadhlaoui@gmail.com)
+📧 Email: [nasseffadhlaoui@gmail.com](mailto:nasseffadhlaoui@gmail.com)
 🌐 LinkedIn: [LinkedIn]
 💼 Portfolio: [Portfolio]
 
